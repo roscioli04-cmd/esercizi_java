@@ -1,3 +1,4 @@
+package esercizio_Forme;
 public class main {
     public static void main(String[] args) {
         Forma formaGenerica = new Forma("Generica");
