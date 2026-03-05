@@ -1,28 +1,16 @@
-class Animale { 
-    public void faiIlVerso() { 
-        System.out.println("L'animale fa un verso generico."); 
-    }
-}
-
-// Classe derivata (Sottoclasse) che estende Animale
-class Gatto extends Animale { 
-    // Override del metodo della superclasse
-    @Override 
-    public void faiIlVerso() { 
-        System.out.println("Il gatto fa: Miao! Miao!"); 
-    }
-}
-
-public class Main { 
-    public static void main(String[] args) {  
+public class Main {
+    public static void main(String[] args) {
         // Istanza della classe base
-        Animale generico = new Animale(); 
-        System.out.print("Verso di Animale: "); 
-        generico.faiIlVerso();
+        Animale mioAnimale = new Animale();
         
-        // Istanza della classe derivata
-        Gatto mioGatto = new Gatto(); 
-        System.out.print("Verso di Gatto: "); 
-        mioGatto.faiIlVerso(); 
+        // Istanza della sottoclasse
+        Gatto mioGatto = new Gatto();
+
+        // Chiamata dei metodi per verificare l'override
+        System.out.print("Verso generico: ");
+        mioAnimale.faiIlVerso();
+
+        System.out.print("Verso del gatto: ");
+        mioGatto.faiIlVerso();
     }
 }
