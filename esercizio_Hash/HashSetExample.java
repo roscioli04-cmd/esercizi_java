@@ -21,3 +21,6 @@ public class HashSetExample {
         System.out.println("L'elemento '" + nuovoNome + "' è nel Set? " + esiste);
     }
 }
+
+
+
